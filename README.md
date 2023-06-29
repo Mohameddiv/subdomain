@@ -52,8 +52,11 @@ sudo cp subdomain.sh /usr/local/bin/
 
 `shodan init <apikey>`
 
+
 2. you need to configure subfider tool for more results
-   `nano .config/subfinder/provider-config.yaml`
+
+`nano .config/subfinder/provider-config.yaml`
+   
 ### Usage
 
 `subdomain.sh target.com`
