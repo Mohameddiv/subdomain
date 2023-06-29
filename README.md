@@ -48,10 +48,12 @@ sudo cp subdomain.sh /usr/local/bin/
 ```
 **Note:**
 
-you need to add your shodan apikey for piad account
+1.you need to add your shodan apikey for piad account
 
 `shodan init <apikey>`
 
+2. you need to configure subfider tool for more results
+   `nano .config/subfinder/provider-config.yaml`
 ### Usage
 
 `subdomain.sh target.com`
