@@ -4,18 +4,19 @@
 #it's reqiure go lang to be installed...
 
 go install -v github.com/tomnomnom/anew@latest
-sudo cp go/bin/anew /usr/local/bin/
+sudo cp $HOME/go/bin/anew /usr/local/bin/
 
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-sudo cp go/bin/subfinder /usr/local/bin/
+sudo cp $HOME/go/bin/subfinder /usr/local/bin/
 
 curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux-i386.zip
 unzip findomain-linux-i386.zip
 chmod +x findomain
 sudo cp findomain /usr/local/bin/
+findomain-linux-i386.zip
 
 go get -u github.com/tomnomnom/assetfinder
-sudo cp go/bin/assetfinder /usr/local/bin/
+sudo cp $HOME/go/bin/assetfinder /usr/local/bin/
 
 sudo apt-get install python-requests
 sudo apt-get install python-dnspython
