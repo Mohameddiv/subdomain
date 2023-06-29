@@ -22,12 +22,27 @@ It uses alot of tools in one time instead of using one tool every time, and coll
 
 [hoOK](https://github.com/mrxdevil404/hoOk)
 
+
+### system requirements
+linux  dist
+installed golang -->(If Not?)
+
+```
+ wget go.dev/dl/go1.20.4.linux-amd64.tar.gz
+ sudo tar -xvf go1.20.4.linux-amd64.tar.gz
+ sudo mv go /usr/local
+ nano /etc/profile or .profile
+ export GOPATH=$HOME/go
+ export PATH=$PATH:/usr/local/go/bin
+ export PATH=$PATH:$GOPATH/bin
+```
+
 ### Installation
 ```
 git clone https://github.com/Mohameddiv/subdomain-enumeration.git
 cd subdomain-enumeration
+chmod +x subdomain.sh install.sh
 ./install.sh
-chmod +x subdomain.sh
 sudo cp subdomain.sh /usr/local/bin/
 ```
 **Note:**
