@@ -20,7 +20,7 @@ sudo cp go/bin/assetfinder /usr/local/bin/
 sudo apt-get install python-requests
 sudo apt-get install python-dnspython
 sudo apt-get install python-argparse
-mkdir $HOME/Recon/;mkdir $HOME/Recon/tools/; mkdir $HOME/Recon/tools/subdomains/;cd $HOME/Recon/tools/
+mkdir $HOME/Recon/;mkdir $HOME/Recon/tools/; mkdir $HOME/Recon/subdomains/;cd $HOME/Recon/tools/
 git clone https://github.com/aboul3la/Sublist3r.git;cd Sublist3r/;sudo pip install -r requirements.txt
 
 chmod +x $HOME/subdomain-enumeration/crt.sh;sudo cp $HOME/subdomain-enumeration/crt.sh /usr/local/bin
