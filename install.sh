@@ -20,12 +20,12 @@ sudo cp go/bin/assetfinder /usr/local/bin/
 sudo apt-get install python-requests
 sudo apt-get install python-dnspython
 sudo apt-get install python-argparse
-mkdir Recon/;cd Recon/;mkdir tools/;cd tools
+mkdir $HOME/Recon/;mkdir $HOME/Recon/tools/; mkdir $HOME/Recon/tools/subdomains/;cd $HOME/Recon/tools/
 git clone https://github.com/aboul3la/Sublist3r.git;cd Sublist3r/;sudo pip install -r requirements.txt
 
-cd ../../../;chmod +x crt.sh;sudo cp crt.sh /usr/local/bin
+chmod +x $HOME/subdomain-enumeration/crt.sh;sudo cp $HOME/subdomain-enumeration/crt.sh /usr/local/bin
 
-cd Recon/tools/;git clone https://github.com/gwen001/github-search;cd github-search;pip3 install -r requirements.txt
+cd $HOME/Recon/tools/;git clone https://github.com/gwen001/github-search;cd github-search;pip3 install -r requirements.txt
 
 cd ..
 pip install shodan
@@ -36,6 +36,6 @@ git clone https://github.com/mrxdevil404/hoOk.git;cd ./hoOk;chmod +x hoOk.py
 touch whoisxmlapi.txt
 echo "at_0oqHhtgztopOOA8Ojtoy1L5LEFPfA">> whoisxmlapi.txt
 echo "at_HWzLSInc59JetFtEiRoOSgQxMPg9l">> whoisxmlapi.txt
-cd ../../;mkdir subdomains/;cd 
+cd $HOME/Recon/tools/;mkdir subdomains/;cd 
 
 
