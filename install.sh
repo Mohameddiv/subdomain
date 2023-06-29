@@ -36,6 +36,5 @@ git clone https://github.com/mrxdevil404/hoOk.git;cd ./hoOk;chmod +x hoOk.py
 touch whoisxmlapi.txt
 echo "at_0oqHhtgztopOOA8Ojtoy1L5LEFPfA">> whoisxmlapi.txt
 echo "at_HWzLSInc59JetFtEiRoOSgQxMPg9l">> whoisxmlapi.txt
-cd $HOME/Recon/tools/;mkdir subdomains/;cd 
 
 
