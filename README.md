@@ -1,6 +1,9 @@
 # Subdomain Enumeration
-My custom script for subdomain enumeration porcess that uses most preferred rescources
+My custom script for subdomain enumeration porcess that uses the most well-known and preferred rescources.
 
+when I move to new VPS, I use this script for subdomain enumeration phase.
+
+It uses alot of tools in one time instead of using one tool every time, and collect the result in one file
 ### Used Tools
 
 [subfinder](https://github.com/projectdiscovery/subfinder)
@@ -34,6 +37,5 @@ you need to add your shodan apikey for piad account
 `shodan init <apikey>`
 
 ### Usage
-```
-subdomain.sh target.com
-```
+
+`subdomain.sh target.com`
