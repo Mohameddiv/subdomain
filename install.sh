@@ -23,7 +23,7 @@ sudo apt-get install python-argparse
 mkdir Recon/;cd Recon/;mkdir tools/;cd tools
 git clone https://github.com/aboul3la/Sublist3r.git;cd Sublist3r/;sudo pip install -r requirements.txt
 
-cd ;chmod +x crt.sh;sudo cp crt.sh /usr/local/bin
+cd ../../../;chmod +x crt.sh;sudo cp crt.sh /usr/local/bin
 
 cd Recon/tools/;git clone https://github.com/gwen001/github-search;cd github-search;pip3 install -r requirements.txt
 
