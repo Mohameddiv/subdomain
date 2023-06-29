@@ -29,13 +29,13 @@ linux  dist
 installed golang -->(If Not?)
 
 ```
- wget go.dev/dl/go1.20.4.linux-amd64.tar.gz
- sudo tar -xvf go1.20.4.linux-amd64.tar.gz
- sudo mv go /usr/local
- nano /etc/profile or .profile
- export GOPATH=$HOME/go
- export PATH=$PATH:/usr/local/go/bin
- export PATH=$PATH:$GOPATH/bin
+wget https://go.dev/dl/go1.20.5.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz
+nano ~/.zshrc
+GOPATH=$HOME/go
+export GOROOT=/usr/local/go
+PATH=$PATH:$GOROOT/bin/:$GOPATH/bin
+source ~/.zshrc
 ```
 
 ### Installation
