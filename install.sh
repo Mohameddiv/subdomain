@@ -13,7 +13,7 @@ curl -LO https://github.com/findomain/findomain/releases/latest/download/findoma
 unzip findomain-linux-i386.zip
 chmod +x findomain
 sudo cp findomain /usr/local/bin/
-findomain-linux-i386.zip
+rm findomain-linux-i386.zip
 
 go get -u github.com/tomnomnom/assetfinder
 sudo cp $HOME/go/bin/assetfinder /usr/local/bin/
