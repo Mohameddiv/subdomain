@@ -15,7 +15,8 @@ chmod +x findomain
 sudo cp findomain /usr/local/bin/
 rm findomain-linux-i386.zip
 
-go get -u github.com/tomnomnom/assetfinder
+wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-386-0.1.1.tgz
+tar -C $HOME/go/bin/ -xzf assetfinder-linux-386-0.1.1.tgz
 sudo cp $HOME/go/bin/assetfinder /usr/local/bin/
 
 sudo apt-get install python-requests
