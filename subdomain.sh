@@ -10,7 +10,7 @@ python3 $HOME/Recon/tools/Sublist3r/sublist3r.py -d $1 | grep "$1" |grep -v "Enu
 #gobuster dns -d $1  -w /usr/share/wordlists/subdomain.txt -q | grep "$1"| anew $HOME/Recon/subdomains/$1.txt
 crt.sh $1 | grep "$1" | anew $HOME/Recon/subdomains/$1.txt 
 python3 $HOME/Recon/tools/github-search/github-subdomains.py -t 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 -d $1 | grep "$1"| anew $HOME/Recon/subdomains/$1.txt
-cd $HOME/Recon/subdomains/$1.txt
+cd $HOME/Recon/tools/ShoLister
 echo $1 >>x.txt
 python3 sholister_hostname.py x.txt
 rm x.txt
