@@ -1,4 +1,4 @@
-#/bin/Bash
+  w#/bin/Bash
 
 #Installation of subdomain.sh tools ....
 #it's reqiure go lang to be installed...
@@ -30,7 +30,7 @@ chmod +x $HOME/subdomain-enumeration/crt.sh;sudo cp $HOME/subdomain-enumeration/
 cd $HOME/Recon/tools/;git clone https://github.com/gwen001/github-search;cd github-search;pip3 install -r requirements.txt
 
 cd ..
-pip install shodan
+sudo pip install shodan
 pip install termcolor
 git clone https://github.com/eslam3kl/ShoLister.git
 
