@@ -40,7 +40,7 @@ source ~/.zshrc
 
 ### Installation
 ```
-git clone https://github.com/Mohameddiv/subdomain-enumeration.git
+git clone https://github.com/Mohameddiv/subdomain.git
 cd subdomain
 sudo chmod +x subdomain.sh install.sh
 sudo bash install.sh
