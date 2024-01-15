@@ -42,7 +42,7 @@ source ~/.zshrc
 ```
 git clone https://github.com/Mohameddiv/subdomain-enumeration.git
 cd subdomain
-sudochmod +x subdomain.sh install.sh
+sudo chmod +x subdomain.sh install.sh
 sudo bash install.sh
 sudo cp subdomain.sh /usr/local/bin
 ```
