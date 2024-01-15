@@ -4,7 +4,7 @@ pip install censys
 censys config 
 
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-mv provider-config.yaml $HOME/.config/subfinder/provider-config.yaml 
+sudo mv provider-config.yaml $HOME/.config/subfinder/provider-config.yaml 
 
 go get -u github.com/tomnomnom/assetfinder
 
