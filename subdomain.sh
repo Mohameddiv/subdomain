@@ -47,7 +47,7 @@ rm x.txt
 cat $1* | grep "$1" 
 rm -rf $1*
 cd
-cd HOME/subdomain/hoOk
+cd $HOME/subdomain/hoOk
 python3 hoOk.py -t $1  
 cat $1* | grep "$1" 
 rm -rf $1*
