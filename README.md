@@ -50,18 +50,20 @@ sudo cp subdomain.sh /usr/local/bin
 
 1.you need to add your censys apikey for piad account
 
-`censys config 
+```censys config 
 
 API ID
-    4f4e5b3d-5133-4dac-92e5-73168755064a 
+    4f4e5b3d-5133-4dac-92e5-73168755064a
+
 Secret
     yjHHKn8qYhQ1tnAgQ8UkzUH3dnM8iL4Q 
 
-`
+```
    
 ### Usage
 for one domain:
 
 `subdomain.sh target.com >> domain.txt`
+
 for more than one domain:
 `for i in $(cat list.txt);don subdomain.sh $i >> subdomains.txt`
