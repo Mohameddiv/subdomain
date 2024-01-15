@@ -66,4 +66,4 @@ for one domain:
 `subdomain.sh target.com >> domain.txt`
 
 for more than one domain:
-`for i in $(cat list.txt);don subdomain.sh $i >> subdomains.txt`
+`for i in $(cat list.txt);don subdomain.sh $i >> subdomains.txt;done`
