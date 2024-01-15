@@ -35,4 +35,6 @@ git clone https://github.com/eslam3kl/ShoLister.git
 pip install censys #don't_forget_to_add_your_api
 git clone https://github.com/mrxdevil404/hoOk.git
 
+sudo chmod +x subdomain.sh
+sudo cp subdomain.sh /usr/local/bin/
 
