@@ -4,7 +4,7 @@
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 sudo mv provider-config.yaml $HOME/.config/subfinder/provider-config.yaml 
 
-go get -u github.com/tomnomnom/assetfinder
+go install -v github.com/tomnomnom/assetfinder@latest
 
 go install -v github.com/hakluke/haktrails@latest
 
