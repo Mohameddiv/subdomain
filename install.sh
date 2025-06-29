@@ -1,6 +1,10 @@
 #install requirements
 
 
+go install -v github.com/tomnomnom/anew@latest
+sudo cp $HOME/go/bin/anew /usr/local/bin/
+
+
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 sudo mv provider-config.yaml $HOME/.config/subfinder/provider-config.yaml 
 sudo cp $HOME/go/bin/subfinder /usr/local/bin/

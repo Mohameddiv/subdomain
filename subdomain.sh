@@ -1,11 +1,13 @@
+#!/bin/bash
 Dir="$HOME/Recon/subdomains"
+
 if [[ "$2" == "-save" ]]; then
     #read -p "Enter your domain:" 1
 #read $1
 subfinder -d $1 -all -silent | grep "$1"| anew |sort >>$Dir/$1.txt
 findomain -t $1  -c /home/mohamed/.config/findomain/findomain-config.yml| grep "$1"|grep -v "Target =="| anew |sort >> $Dir/$1.txt
 #amass enum -passive -norecursive -noalts -d $1 | grep "$domain" | anew |sort >> $Dir/$1.txt
-rsescan -d $1 | grep "$1"| anew |sort >> $Dir/$1.txt
+rsescan -d $1 | grep "$1" -key 45caaddd-b3fd-45fa-b70f-3f03ed9eaa81 | anew |sort >> $Dir/$1.txt
 curl -s https://api.subdomain.center/?domain=$1|jq .|cut -d '"' -f 2 | grep "$1"| anew |sort >> $Dir/$1.txt
 assetfinder -subs-only $1 | grep "$1" | anew |sort >> $Dir/$1.txt
 curl https://shrewdeye.app/domains/$1.txt | grep "$1" | anew |sort >> $Dir/$1.txt
@@ -37,7 +39,7 @@ crt.sh $1 | grep "$1" | anew |sort >> $Dir/$1.txt
 cat $1* | grep "$1"| anew |sort >> $Dir/$1.txt
 rm -rf $1*
 cd
-cd /mnt/sda2/Tools/hoOk
+cd $HOME/Tools/subdomain/hoOk/
 python3 hoOk.py -t $1  
 cat $1* | grep "$1"| anew |sort >> $Dir/$1.txt
 rm -rf $1*
@@ -56,7 +58,7 @@ else
 subfinder -d $1 -all -silent | grep "$1" 
 findomain -t $1  -c /home/mohamed/.config/findomain/findomain-config.yml| grep "$1"|grep -v "Target ==" 
 #amass enum -passive -norecursive -noalts -d $1 | grep "$domain"  
-rsescan -d $1 | grep "$1"
+rsescan -d $1  -key 45caaddd-b3fd-45fa-b70f-3f03ed9eaa81| grep "$1"
 curl -s https://api.subdomain.center/?domain=$1|jq .|cut -d '"' -f 2 
 assetfinder -subs-only $1 | grep "$1"  
 curl https://shrewdeye.app/domains/$1.txt | grep "$1"
