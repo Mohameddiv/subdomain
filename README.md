@@ -42,8 +42,8 @@ source ~/.zshrc
 ```
 git clone https://github.com/Mohameddiv/subdomain.git
 cd subdomain
-sudo chmod +x subdomain.sh install.sh
-sudo bash install.sh
+chmod +x subdomain.sh install.sh
+bash install.sh
 sudo cp subdomain.sh /usr/local/bin
 ```
 **Note:**
