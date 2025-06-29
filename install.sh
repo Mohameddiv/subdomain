@@ -3,7 +3,7 @@
 
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 sudo mv provider-config.yaml $HOME/.config/subfinder/provider-config.yaml 
-sudo cp go/bin/subfinder /usr/local/bin/
+sudo cp $HOME/go/bin/subfinder /usr/local/bin/
 
 curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux-i386.zip
 unzip findomain-linux-i386.zip
@@ -12,10 +12,10 @@ sudo mv findomain /usr/bin/findomain
 rm findomain-linux-i386.zip
 
 go install github.com/shdwpwn/rsescan@latest
-sudo cp go/bin/rsescan /usr/local/bin/
+sudo cp $HOME/go/bin/rsescan /usr/local/bin/
 
 go install -v github.com/tomnomnom/assetfinder@latest
-sudo cp go/bin/assetfinder /usr/local/bin/
+sudo cp $HOME/go/bin/assetfinder /usr/local/bin/
 
 chmod +x subMonit88r
 sudo cp subMonit88r /usr/local/bin/
