@@ -30,11 +30,11 @@ sudo cp haktrails /usr/local/bin/
 chmod +x  firebase.sh
 sudo cp firebase.sh /usr/local/bin/
 
-#git clone https://github.com/aboul3la/Sublist3r.git
-#cd Sublist3r/
-#sudo pip install -r requirements.txt
-#sudo cp sublist3r.py /usr/local/bin/
-#cd ..
+git clone https://github.com/aboul3la/Sublist3r.git
+cd Sublist3r/
+sudo pip install -r requirements.txt
+python3 setup.py install 
+cd ..
 
 chmod +x crt.sh
 sudo cp crt.sh /usr/local/bin/
