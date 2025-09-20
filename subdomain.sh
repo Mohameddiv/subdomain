@@ -41,11 +41,11 @@ crt.sh $1 | grep "$1" | anew |sort >> $Dir/$1.txt
 cat $1* | grep "$1"| anew |sort >> $Dir/$1.txt
 rm -rf $1*
 cd
-cd $HOME/Tools/subdomain/hoOk/
-python3 hoOk.py -t $1  
-cat $1* | grep "$1"| anew |sort >> $Dir/$1.txt
-rm -rf $1*
-cd
+#cd $HOME/Tools/subdomain/hoOk/
+#python3 hoOk.py -t $1  
+#cat $1* | grep "$1"| anew |sort >> $Dir/$1.txt
+#rm -rf $1*
+#cd
 
 cat $Dir/$1.txt |sort -u -o $Dir/$1.txt
 total=$(cat $Dir/$1.txt | wc  -l)
